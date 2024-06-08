@@ -1,0 +1,43 @@
+
+
+.Dsection {
+  background-image: url('./img/backround2.svg');
+  padding-top: 120px;
+  padding-bottom: 250px;
+
+  h1 {
+    color: #fff;
+    text-align: center;
+  }
+
+  .slider-home {
+    margin-top: 10%;
+
+    .card-slider-home {
+        padding-left: 12%;
+        padding-right: 12%;
+      img {
+        width: 250px;
+        height: 308px;
+        border-radius: 10px;
+      }
+    }
+    .slick-dots{
+   bottom: -150px;
+    button:before{
+        color: #ffff;
+        width: 15px;
+        font-size: 15px;
+    }
+}
+    .slick-prev,
+    .slick-next {
+      color: #fff;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      font-size: 30px;
+    }
+  }
+}

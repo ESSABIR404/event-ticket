@@ -19,6 +19,10 @@ header{
         a{
             text-decoration: none;
             color: #ffff;
+            cursor: pointer;
+            &:hover{
+                color: #E63E6D;
+            }
         }
         .rose{
             color: #E63E6D;
@@ -30,8 +34,20 @@ header{
         margin-left: 18%;
 
     }
-    .shop-icon-container{
-        margin-left: 40%;
-        margin-top: 2%;
+    .shop-icon-container {
+    cursor: pointer;
+    position: relative;
+    margin-top: 1.8%;
+    margin-left: 40%;
+    .shop-icon2 {
+        display: none;
     }
 
+    &:hover .shop-icon {
+        display: none;
+    }
+
+    &:hover .shop-icon2 {
+        display: block;
+    }
+}

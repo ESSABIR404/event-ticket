@@ -3,6 +3,9 @@ import Header from './Home/Header';
 import './Home.scss';
 import Psection from './Home/Psection';
 import Dsection from './Home/Dsection';
+import Tsection from './Home/Tsection';
+import Qsection from './Home/Qsection';
+
 
 function Home() {
   return (
@@ -12,6 +15,10 @@ function Home() {
         <Psection/>
         </div>
      <Dsection/>
+     
+     <Qsection/>
+     
+     <Tsection/>
     </div>
   );
 }

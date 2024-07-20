@@ -30,6 +30,10 @@
                     background-color: #E63E6D;
                     color: #ffff;
                     margin-left: 50px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #db2055;
+                    }
                 }
             }
         }

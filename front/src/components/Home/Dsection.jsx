@@ -19,6 +19,8 @@ function Psection() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
     responsive: [
       {
         breakpoint: 1024,
@@ -50,30 +52,12 @@ function Psection() {
     <div className='Dsection'>
       <h1>THE NEW</h1>
       <Slider {...settings} className='slider-home'>
-        <div className='card-slider-home'>
-          <img src={img1} alt="Image 1" />
-        </div>
-        <div className='card-slider-home'>
-          <img src={img2} alt="Image 2" />
-        </div>
-        <div className='card-slider-home'>
-          <img src={img3} alt="Image 3" />
-        </div>
-        <div className='card-slider-home'>
-          <img src={img4} alt="Image 4" />
-        </div>
-        <div className='card-slider-home'>
-          <img src={img5} alt="Image 5" />
-        </div>
-        <div className='card-slider-home'>
-          <img src={img6} alt="Image 6" />
-        </div>
-        <div className='card-slider-home'>
-          <img src={img7} alt="Image 7" />
-        </div>
-        <div className='card-slider-home'>
-          <img src={img8} alt="Image 8" />
-        </div>
+        {[img1, img2, img3, img4, img5, img6, img7, img8].map((img, index) => (
+          <div className='card-slider-home' key={index}>
+            <img src={img} alt={`Image ${index + 1}`} />
+            <button className="buy-button">BUY NEW</button>
+          </div>
+        ))}
       </Slider>
     </div>
   );
